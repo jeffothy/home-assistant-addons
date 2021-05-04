@@ -13,7 +13,7 @@ RUN apk add --no-cache python2 py2-paho-mqtt \
     && rm -r /root/.cache \
     && apk add --no-cache --virtual .build4pjsip alpine-sdk \
     && apk add --no-cache libsrtp-dev python2-dev openssl-dev linux-headers \
-    && curl -L -s -S https://raw.githubusercontent.com/MartyTremblay/sip2mqtt/master/sip2mqtt.py -O  \
+    && curl -L -s -S https://raw.githubusercontent.com/manutoky/sip2mqtt/master/sip2mqtt.py -O  \
     && cd \
     && curl -L -s -S "https://github.com/pjsip/pjproject/archive/${VERSION_PJSIP}.tar.gz" | tar -xz \
     && cd "pjproject-${VERSION_PJSIP}" \

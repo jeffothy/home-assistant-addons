@@ -24,7 +24,7 @@ RUN apk add --no-cache python2 py2-paho-mqtt \
       --disable-sdl \
       --disable-speex-aec \
       --disable-video \
-	  --disable-webrtc \
+	  --disable-libwebrtc \
       --prefix=/usr/local > /dev/null \
     \
     && make dep \

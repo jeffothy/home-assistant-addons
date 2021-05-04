@@ -18,7 +18,7 @@ def extract_caller_id(url):
         return m.group(1) + " " + phone_format(m.group(2))
     else:
         m = re.match(r".*:(.*)@", url)
-        return "\"Unbekannt \"" + phone_format(m.group(1))
+        return "Unbekannt " + phone_format(m.group(1))
 
 
 def phone_format(phone_number):

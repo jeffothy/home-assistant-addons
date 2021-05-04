@@ -181,7 +181,7 @@ def main(argv):
         acc_cfg.id = "sip:" + args.sip_username + "@" + args.sip_domain
         acc_cfg.reg_uri = "sip:" + args.sip_domain
         acc_cfg.auth_cred = [ pj.AuthCred("*", args.sip_username, args.sip_password) ]
-        acc_cfg.allow_contact_rewrite = False
+        acc_cfg.allow_contact_rewrite = True
 
         acc = lib.create_account(acc_cfg)
         acc_cb = SMAccountCallback(acc)

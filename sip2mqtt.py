@@ -22,16 +22,17 @@ def extract_caller_id(url):
 
 
 def phone_format(phone_number):
-    clean_phone_number = re.sub('[^0-9]+', '', phone_number)
-    formatted_phone_number = ''
+#    clean_phone_number = re.sub('[^0-9]+', '', phone_number)
+#    formatted_phone_number = ''
 
 #    try:
 #        formatted_phone_number = re.sub("(\d)(?=(\d{3})+(?!\d))", r"\1-", "%d" % int(clean_phone_number[:-1])) + clean_phone_number[-1]
 #    except:
 #        logging.warn( "Warning: unable to format " + clean_phone_number )
-        formatted_phone_number = clean_phone_number
+#        formatted_phone_number = clean_phone_number
 
-    return formatted_phone_number
+#    return formatted_phone_number
+	return phone_number
 
 def signal_handler(signal, frame):
     logging.info( 'Exiting...' )

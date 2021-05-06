@@ -1,3 +1,11 @@
+This is a modified version of sip2mqtt
+
+Changes:
+Extract caller ID was not compatible with the signalling of my provider (a fritzbox).
+Formatting of the caller ID is deactivated.
+
+
+
 # sip2mqtt
 A SIP monitoring script that publishes incoming calls with CallerID to an MQTT channel
 

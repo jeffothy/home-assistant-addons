@@ -32,7 +32,7 @@ def phone_format(phone_number):
 #        formatted_phone_number = clean_phone_number
 
 #    return formatted_phone_number
-	return phone_number
+    return phone_number
 
 def signal_handler(signal, frame):
     logging.info( 'Exiting...' )

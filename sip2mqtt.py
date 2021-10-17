@@ -196,7 +196,7 @@ def main(argv):
         logging.info( "-- Registration Complete --" )
         logging.info( 'SIP: Status = ' + str(acc.info().reg_status) + ' (' + acc.info().reg_reason + ')' )
 
-    except pj.Error, e:
+    except pj.Error as e:
         logging.critical( ("Exception: " + str(e)) )
         lib.destroy()
         sys.exit(1)
@@ -212,7 +212,7 @@ def main(argv):
             time.sleep(1)
         broker.loop_stop()
 
-    except Exception, ex:
+    except Exception as ex:
         logging.critical("Exception: " + str(ex))
         lib.destroy()
         sys.exit(1)

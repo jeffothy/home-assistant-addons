@@ -20,64 +20,64 @@
    server min protocol = NT1
    {{ end }}
 
-[config]
-   browseable = yes
-   writeable = yes
-   path = /config
-
-   valid users = {{ .username }}
-   force user = root
-   force group = root
-   veto files = /{{ .veto_files | join "/" }}/
-   delete veto files = {{ eq (len .veto_files) 0 | ternary "no" "yes" }}
-
-[addons]
-   browseable = yes
-   writeable = yes
-   path = /addons
-
-   valid users = {{ .username }}
-   force user = root
-   force group = root
-   veto files = /{{ .veto_files | join "/" }}/
-   delete veto files = {{ eq (len .veto_files) 0 | ternary "no" "yes" }}
-
-[ssl]
-   browseable = yes
-   writeable = yes
-   path = /ssl
-
-   valid users = {{ .username }}
-   force user = root
-   force group = root
-   veto files = /{{ .veto_files | join "/" }}/
-   delete veto files = {{ eq (len .veto_files) 0 | ternary "no" "yes" }}
-
-[share]
-   browseable = yes
-   writeable = yes
-   path = /share
-
-   valid users = {{ .username }}
-   force user = root
-   force group = root
-   veto files = /{{ .veto_files | join "/" }}/
-   delete veto files = {{ eq (len .veto_files) 0 | ternary "no" "yes" }}
-
-[backup]
-   browseable = yes
-   writeable = yes
-   path = /backup
-
-   valid users = {{ .username }}
-   force user = root
-   force group = root
-   veto files = /{{ .veto_files | join "/" }}/
-   delete veto files = {{ eq (len .veto_files) 0 | ternary "no" "yes" }}
+#[config]
+#   browseable = yes
+#   writeable = yes
+#   path = /config
+#
+#   valid users = {{ .username }}
+#   force user = root
+#   force group = root
+#   veto files = /{{ .veto_files | join "/" }}/
+#   delete veto files = {{ eq (len .veto_files) 0 | ternary "no" "yes" }}
+#
+#[addons]
+#   browseable = yes
+#   writeable = yes
+#   path = /addons
+#
+#   valid users = {{ .username }}
+#   force user = root
+#   force group = root
+#   veto files = /{{ .veto_files | join "/" }}/
+#   delete veto files = {{ eq (len .veto_files) 0 | ternary "no" "yes" }}
+#
+#[ssl]
+#   browseable = yes
+#   writeable = yes
+#   path = /ssl
+#
+#   valid users = {{ .username }}
+#   force user = root
+#   force group = root
+#   veto files = /{{ .veto_files | join "/" }}/
+#   delete veto files = {{ eq (len .veto_files) 0 | ternary "no" "yes" }}
+#
+#[share]
+#   browseable = yes
+#   writeable = yes
+#   path = /share
+#
+#   valid users = {{ .username }}
+#   force user = root
+#   force group = root
+#   veto files = /{{ .veto_files | join "/" }}/
+#   delete veto files = {{ eq (len .veto_files) 0 | ternary "no" "yes" }}
+#
+#[backup]
+#   browseable = yes
+#   writeable = yes
+#   path = /backup
+#
+#   valid users = {{ .username }}
+#   force user = root
+#   force group = root
+#   veto files = /{{ .veto_files | join "/" }}/
+#   delete veto files = {{ eq (len .veto_files) 0 | ternary "no" "yes" }}
 
 [media]
    browseable = yes
-   writeable = yes
+   writeable = no
    path = /media
 
    valid users = {{ .username }}

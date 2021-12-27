@@ -14,7 +14,7 @@ host_network: true
 image: homeassistant/{arch}-addon-samba
 init: false
 map:
-  - media:w
+  - media:ro
 options:
   allow_hosts:
     - 10.0.0.0/8

@@ -1,4 +1,4 @@
-version: 9.5.1
+version: 9.5.1-jeffothy-1
 slug: samba
 name: Samba share
 description: Expose Home Assistant folders with SMB/CIFS
@@ -14,12 +14,7 @@ host_network: true
 image: homeassistant/{arch}-addon-samba
 init: false
 map:
-  - config:rw
-  - ssl:rw
-  - addons:rw
-  - share:rw
-  - backup:rw
-  - media:rw
+  - media:w
 options:
   allow_hosts:
     - 10.0.0.0/8

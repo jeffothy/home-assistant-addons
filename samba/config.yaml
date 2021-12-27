@@ -1,6 +1,6 @@
-version: 9.5.1-jeffothy-1
+version: 9.5.1
 slug: samba
-name: Samba share
+name: Samba share (jeffothy)
 description: Expose Home Assistant folders with SMB/CIFS
 url: https://github.com/jeffothy/home-assistant-addons/tree/main/samba
 arch:

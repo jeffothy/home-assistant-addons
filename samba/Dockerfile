@@ -19,3 +19,4 @@ RUN \
 
 # Copy data
 COPY rootfs /
+

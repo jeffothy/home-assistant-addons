@@ -1,5 +1,9 @@
 # Changelog
 
+## 9.5.1-jeffothy-0
+
+- Remove all but /media share
+
 ## 9.5.1
 
 - Add `hassio_api` to add-on configuration

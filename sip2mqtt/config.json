@@ -6,7 +6,6 @@
   "url": "https://github.com/jeffothy/home-assistant-addons/tree/main/sip2mqtt",
   "image": "ghcr.io/jeffothy/homeassistant-{arch}-addon-sip2mqtt",
   "startup": "services",
-  "boot": "auto",
   "options": { 
     "mqttadress": "addon_core_mosquitto",
     "mqttport": "1883",

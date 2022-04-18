@@ -61,6 +61,7 @@ class SMAccountCallback(pj.AccountCallback):
 
     def on_reg_state(self):
         logging.info( "SIP: Registration complete, status=" + str(self.account.info().reg_status) + " (" + str(self.account.info().reg_reason) + ")" )
+        broker.publish(args.mqtt_topic, payload="{\"verb\": \"idle\", \"caller\":\"\", \"uri\":\"\"}", qos=0, retain=True)
 
     def on_incoming_call(self, call):
         # Unless this callback is implemented, the default behavior is to reject the call with default status code.

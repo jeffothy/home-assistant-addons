@@ -1,7 +1,6 @@
 # Home Assistant sip2mqtt Add-on
  
-Home Assistant add-on inspired by MartyTremblay / https://github.com/MartyTremblay/pjsip-docker 
-and minoruta / https://github.com/minoruta/pjsip-node-alpine
+Home Assistant add-on forked from https://github.com/manutoky/hassio-addons inspired by MartyTremblay / https://github.com/MartyTremblay/pjsip-docker and minoruta / https://github.com/minoruta/pjsip-node-alpine
 
 ## Notes
 1. Installation of this add-on takes a __long__ time as it compiles the pjsip Pyhton buildings from C. In other words, be patient...
@@ -20,4 +19,4 @@ sensor:
 ```
 
 ## sensor
-![alt text](https://raw.githubusercontent.com/raph2i/hassio-addons/master/sip2mqtt/pic.png "mqtt_sensor")
+![alt text](https://raw.githubusercontent.com/jeffothy/home-assistant-addons/main/sip2mqtt/pic.png "mqtt_sensor")

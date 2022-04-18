@@ -1,8 +1,10 @@
 {
-  "name": "sip2mqtt",
+  "name": "sip2mqtt (jeffothy)",
   "version": "0.0.1",
   "slug": "sip2mqtt",
   "description": "A SIP monitoring script that publishes incoming calls with CallerID to an MQTT channel",
+  "url": "https://github.com/jeffothy/home-assistant-addons/tree/main/sip2mqtt",
+  "image": "ghcr.io/jeffothy/homeassistant-{arch}-addon-sip2mqtt",
   "startup": "services",
   "boot": "auto",
   "options": { 

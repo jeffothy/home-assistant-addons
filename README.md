@@ -16,6 +16,12 @@ This repository contains the following add-ons
 
 _Share your configuration over the network using Windows file sharing._
 
+### [sip2mqtt add-on](./sip2mqtt)
+
+![Supports amd64 Architecture][amd64-shield]
+
+_A SIP monitoring script that publishes incoming calls with CallerID to an MQTT channel._
+
 <!--
 
 Notes to developers after forking or using the github template feature:
